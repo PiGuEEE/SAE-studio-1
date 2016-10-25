@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Studio 3 jQuery Website</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="menu">
+            <div class="whiteBg">
+                <div class="close"></div>
+                <a href="#" data-target="#home" class="homeButton">
+                    <p>Home</p>
+                </a>
+                <a href="#" class="aboutButton" data-target="#about">
+                    <p>About</p>
+                </a>
+                <a href="#" class="aboutButton" data-target="#portfolio">
+                    <p>Portfolio</p>
+                </a>
+                <a href="#" class="aboutButton" data-target="#contact">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="overlay orange"></div>
+        
+        <div class="loader" id="loader">
+            <div class="shadow"></div>
+        </div>
+<!--        
+        <div class="loader2" id="loader2">
+            <div class="bar"></div>
+        </div>
+-->      
+            
+        <div class="wrapper">
+            <div class="menuOpen"></div>
+            
+
+            <section class="content active" id="home" data-target="home">
+                <section class="left">
+                    <h1>Hey! :)</h1>
+                    <p>My name is Arthur Finkler, and I am an UI/UX Designer based in Brisbane, Australia.</p>
+                    <p>Currently working for <span><a href="http://www.irecruit.com.au" target="_blank" class="irecruit">iRecruit Australia</a></span> ;)</p>
+                    <a href="#" data-target="#portfolio" class="checkOut">check out my work</a>
+                </section>
+                <section class="right">
+                    <div class="phone">
+                        <img src="https://web-cdn.irecruit.com.au/media/20160505214758/talent-feed-320x653.png">
+                    </div>
+                    <div class="title">
+                        <img src="https://web-cdn.irecruit.com.au/web-v3.2.4/img/irecruit-logo.png"></img>
+                        <h1>The new way to find a job<br/> <span>is here!</span></h1>
+                        <p>www.irecruit.com.au</p>    
+                    </div>
+
+                </section>
+
+                
+            </section>
+            
+            <section class="content inactive" data-target="about" id="about">
+                <h1>About</h1>
+                <div class="profilePic"></div>
+                <div class="aboutContainer">
+                    <h3>I do some UI's and also design great experiences for users across all online platforms</h3>
+                    <p>Currently based in Brisbane and working for iRecruit Australia, the new way to filter job applicants focusing not only on what they do, but also on WHO THEY ARE.</p>
+                    <p>I've been working with both Graphic & Web Design for about 7 years now, had the opportunity to work among different sizes of teams, from big enterprises to small studios and even solo work.</p>
+                </div>
+            </section>
+            
+            <section class="content inactive" data-target="portfolio" id="portfolio">
+                <div class="portfolioHeader">
+                    <h1>Portfolio</h1>    
+                    <p>User Interface <span>/</span> User Experience</p>    
+                </div>
+                <div class="work left">
+                    <div class="workImage" style="background-image: url(https://web-cdn.irecruit.com.au/media/20160616161112/home2.jpg);"></div>
+                    <div class="workTitle">
+                        <h2>iRecruit Australia Website</h2>
+                    </div>
+                </div>
+                <div class="work right">
+                    <div class="workImage" style="background-image: url(https://web-cdn.irecruit.com.au/media/20160616161112/home2.jpg);"></div>
+                    <div class="workTitle">
+                        <h2>Work title here! :)</h2>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="content inactive" data-target="contact" id="contact">
+                <h1>Contact</h1>
+                <div class="contactContainer">
+                    <h3>Let's have a beer!</h3>
+                    <p>You can reach me via email - <span>xpigue@gmail.com</span> or via twitter - <span><a href="http://www.twitter.com/pigueee"></a>@pigueee</a></span></p>
+                </div>
+            </section>
+            
+        </div>
+        
+    </body>
+</html>

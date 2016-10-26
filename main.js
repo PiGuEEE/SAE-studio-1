@@ -2,11 +2,11 @@ $(document).ready(function(){
     
     setTimeout(function(){
         $('.wrapper').addClass('loaded');
-    }, 5000);
+    }, 2000);
     
     setTimeout(function(){
         $('.loader').addClass('shrinkDown');
-    }, 5000);
+    }, 2000);
     
     $('.menuOpen').click(function(){
         $('.menu').fadeIn(500); 

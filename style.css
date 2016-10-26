@@ -354,7 +354,7 @@ nav .close{
     width: 100%;
     text-align: center;
     margin-bottom: 80px;
-    background-color: #2c3e50;
+    background-color: #212121;
     padding-bottom: 20px;
 }
 #portfolio .portfolioHeader h1{
@@ -382,39 +382,41 @@ nav .close{
     transition: .3s;
 }
 #portfolio .portfolioHeader h1:hover:before{
-    margin-left: -68px;
-    transform: skewX(68deg);
+    margin-left: -16px;
+    transform: skewX(25deg);
     transition: .3s;
 }
 #portfolio .portfolioHeader h1:before{
-    transform: skewX(65deg);
+    transform: skewX(20deg);
     color: #999;
     content: '';
     z-index: -1;
     position: absolute;
     content: 'Portfolio';
-    opacity: 0.3;
-    margin-left: -62px;
+    opacity: 0.15;
+    margin-left: -12px;
     transition: .3s;
 }
 
 .work{
     width: 90%;
-    max-width: 1280px;
-    min-height: 350px;
+    max-width: 1000px;
+    min-height: 650px;
     position: relative;
     margin: 0 auto;
     clear: both;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 #portfolio .work .workImage{
-    width: 60%;
-    max-width: 650px;
-    min-height: 350px;
+    width: 100%;
+    max-width: 850px;
+    min-height: 375px;
     background-color: #EFEFEF;
-    position: absolute;
+    position: relative;
     background-size: cover;
     transition: .3s;
+    margin: 0 auto;
+    margin-bottom: 40px;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
@@ -425,38 +427,70 @@ nav .close{
     box-shadow: 0px 25px 39px 0px rgba(0,0,0,0.45);
     transition: .3s;
 }
-#portfolio .work .workTitle{
-    padding: 40px 30px;
-    background-color: #FFF;
+#portfolio .work .workImage .workCategory{
     position: absolute;
+    bottom: 38px;
+    right: -60px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    color: #444;
+    transform: rotate(-90deg);
+    letter-spacing: 1px;
+}
+#portfolio .work .workInfo {
+    position: relative;
+    clear: both;
+    min-height: 110px;
+}
+#portfolio .work .workInfo .workTitle{
+    width: 50%;
+    float: left;
     z-index: 99;
     text-align: center;
-    top: 25%;
 }
-#portfolio .work .workTitle h2{
+#portfolio .work .workInfo .workTitle h2{
+    text-align: left;
+    text-decoration: underline;
     color: #333;
-    font-size: 2.5em;
+    font-size: 2.1em;
+    font-weight: 600;
     font-style: italic;
 }
-#portfolio .work .workTitle h2:before{
+#portfolio .work .workInfo .workTitle h2:before{
     width: 60px;
     height: 60px;
     background-color: #CCC;
     content: '';
 }
+#portfolio .work .workInfo .workDescription{
+    width: 50%;
+    float: right;
+    z-index: 99;
+    text-align: left;
+    padding-left: 100px;
+    color: #999;
+    font-size: 0.85em;
+    line-height: 1.3em;
+}
+#portfolio .work .workText{
+    width: 80%;
+    max-width: 600px;
+    z-index: 99;
+    text-align: left;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
 #portfolio .left .workImage{
-    left: 0;
 }
 #portfolio .left .workTitle {
-    left: 48%;
-    border-right: 5px solid #111;
 }
 #portfolio .right .workImage{
-    right: 0;
 }
 #portfolio .right .workTitle {
-    right: 48%;
-    border-left: 5px solid #111;
+    
 }
 
 
